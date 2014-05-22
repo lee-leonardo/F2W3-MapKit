@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		38571E2E192E84D3009C49C2 /* Directions.m in Sources */ = {isa = PBXBuildFile; fileRef = 38571E2D192E84D3009C49C2 /* Directions.m */; };
 		3885F8D0192D1CE100644779 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3885F8CF192D1CE100644779 /* Foundation.framework */; };
 		3885F8D2192D1CE100644779 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3885F8D1192D1CE100644779 /* CoreGraphics.framework */; };
 		3885F8D4192D1CE100644779 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3885F8D3192D1CE100644779 /* UIKit.framework */; };
@@ -34,6 +35,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		38571E2C192E84D3009C49C2 /* Directions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Directions.h; sourceTree = "<group>"; };
+		38571E2D192E84D3009C49C2 /* Directions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Directions.m; sourceTree = "<group>"; };
 		3885F8CC192D1CE100644779 /* F2W3-MapKitProject.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "F2W3-MapKitProject.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		3885F8CF192D1CE100644779 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		3885F8D1192D1CE100644779 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
@@ -79,6 +82,32 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		38571E29192E838C009C49C2 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				3885F8E4192D1CE100644779 /* ViewController.h */,
+				3885F8E5192D1CE100644779 /* ViewController.m */,
+			);
+			name = Controller;
+			sourceTree = "<group>";
+		};
+		38571E2A192E8394009C49C2 /* VIew */ = {
+			isa = PBXGroup;
+			children = (
+				3885F8E1192D1CE100644779 /* Main.storyboard */,
+			);
+			name = VIew;
+			sourceTree = "<group>";
+		};
+		38571E2B192E83A5009C49C2 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				38571E2C192E84D3009C49C2 /* Directions.h */,
+				38571E2D192E84D3009C49C2 /* Directions.m */,
+			);
+			name = Model;
+			sourceTree = "<group>";
+		};
 		3885F8C3192D1CE100644779 = {
 			isa = PBXGroup;
 			children = (
@@ -114,9 +143,9 @@
 			children = (
 				3885F8DE192D1CE100644779 /* AppDelegate.h */,
 				3885F8DF192D1CE100644779 /* AppDelegate.m */,
-				3885F8E1192D1CE100644779 /* Main.storyboard */,
-				3885F8E4192D1CE100644779 /* ViewController.h */,
-				3885F8E5192D1CE100644779 /* ViewController.m */,
+				38571E2B192E83A5009C49C2 /* Model */,
+				38571E2A192E8394009C49C2 /* VIew */,
+				38571E29192E838C009C49C2 /* Controller */,
 				3885F8E7192D1CE100644779 /* Images.xcassets */,
 				3885F8D6192D1CE100644779 /* Supporting Files */,
 			);
@@ -252,6 +281,7 @@
 				3885F8E6192D1CE100644779 /* ViewController.m in Sources */,
 				3885F8E0192D1CE100644779 /* AppDelegate.m in Sources */,
 				3885F8DC192D1CE100644779 /* main.m in Sources */,
+				38571E2E192E84D3009C49C2 /* Directions.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -456,6 +486,7 @@
 				3885F900192D1CE100644779 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		3885F901192D1CE100644779 /* Build configuration list for PBXNativeTarget "F2W3-MapKitProjectTests" */ = {
 			isa = XCConfigurationList;
@@ -464,6 +495,7 @@
 				3885F903192D1CE100644779 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
